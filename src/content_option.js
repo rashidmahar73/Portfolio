@@ -72,25 +72,28 @@ const services = [{
 const dataportfolio = [
     {
         projectName:"Motion2Coach",
+        company:"Fenris GMBH",
         img: "/assets/images/motion2Coach.png",
         description: "Unveil the secrets of your golf swing like never before with our marker less and wireless motion analysis in 2D and 3D combined with comprehensive swing metrics. Our state-of-the-art analysis system captures every nuance of your swing, allowing you to delve deep into the mechanics and subtleties that define your technique. Visualize your swing from every angle, rotating and zooming to gain a comprehensive understanding of your form. Accompanied by detailed swing metrics, including club speed, angle of attack, tempo, and more, you'll have the tools you need to fine-tune your game and take your golfing prowess to new heights.",
         link: "https://www.motion2coach.com/",
         
     },{
         projectName:"Edirectory",
+        company:"Enigmatix",
         img: "/assets/images/edirectory.png",
         link: "https://e-directory.netlify.app/",
         description: "Your Ultimate Movie Companion eDirectory is an innovative web application meticulously crafted to serve as your ultimate movie companion. Developed with cutting-edge technologies including React.js, Ant Design, Sass, React Router DOM, and Moment.js, eDirectory offers a comprehensive repository of complete movie details, ensuring that movie enthusiasts have everything they need right at their fingertips."
     },
     {
         projectName:"Fun Fox",
+        company:"Fun Fox",
         img: "/assets/images/funFox.png",
         description: "Dynamic Slide Routing with React Router DOM: The app harnesses the power of React Router DOM to effortlessly transition between engaging slideshows, offering users a fluid and immersive viewing experience akin to flipping through a captivating presentation. Vibrant Content Presentation: Users are treated to a rich assortment of fox-related content, artfully presented in slide format. From breathtaking images and captivating videos to fascinating facts and interactive quizzes, every aspect is seamlessly integrated into the dynamic slide-based interface.",
         link: "https://fun-fox-app.netlify.app/",
     },
     {
         projectName:"React Template Designing",
-
+        company:"Self",
         img: "/assets/images/reactTemplateDesing.png",
         description: "With years of experience in React development, I specialize in crafting dynamic and user-friendly web solutions. My latest project involved designing and implementing a fully responsive template, ensuring optimal viewing experiences across all devices, including mobile phones, tablets, desktops, and laptops.",
         link: "https://react-template-designing-git-main-rashid-shahbazs-projects.vercel.app/",

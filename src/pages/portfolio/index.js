@@ -24,6 +24,7 @@ export const Portfolio = () => {
             return (
               <div key={i} className="" style={{marginTop:"10px"}} >
                 <h1 style={{margin:"0px"}}>{data?.projectName}</h1>
+                <h5 style={{margin:"0px",paddingBottom:"10px"}}>{data?.company} </h5>
                 <div className="content">
                   <p>{data.description}</p>
                   <a href={data.link}>view project</a>
