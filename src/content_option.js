@@ -1,7 +1,7 @@
 const logotext = "RASHID";
 const meta = {
-    title: "John Doe",
-    description: "I’m Rashid Shahbaz data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Rashid Shahbaz",
+    description: "I’m Rashid Shahbaz Front-end developer,currently working in Pakistan",
 };
 
 const introdata = {
