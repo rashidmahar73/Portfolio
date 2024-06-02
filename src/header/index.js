@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -13,6 +13,27 @@ const Headermain = () => {
     // document.body.classList.toggle("ovhidden");
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setActive(true);
+      } else {
+        setActive(false);
+      }
+    };
+
+    // Check initial width
+    handleResize();
+
+    // Attach the event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="site__header">
@@ -22,7 +43,15 @@ const Headermain = () => {
           </Link>
         </div>
 
-        <div className={`site__navigation menu__opend ${!isActive ? "" : ""}`}>
+        <div
+          className={`site__navigation  ${
+            window.innerWidth <= 768
+              ? !isActive
+                ? "menu_opened_small_device"
+                : "menu__opend_hide"
+              : "menu__opend"
+          }`}
+        >
           <ul className="the_menu">
             <li className="menu_item ">
               <Link onClick={handleToggle} to="/">
