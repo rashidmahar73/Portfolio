@@ -80,9 +80,29 @@
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
   transform: translateY(-100%);
+  transform: translateY(0%);
   padding: 1rem 0;
-  transform: translateY(0);
   background-color: #1d1d1d;
+}
+
+.light_menu_opened_small_device{
+    visibility: visible !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    transform: translateY(0%);
+    padding: 1rem 0;
+    background-color: white;
+}
+
+.light_menu_opened_small_device ul{
+    flex-direction: column;
+    padding-left: 0px;
 }
 
 .menu_opened_small_device ul{

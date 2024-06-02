@@ -7,11 +7,26 @@ import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  const [dark, setDark] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
     // document.body.classList.toggle("ovhidden");
   };
+
+  const darkMode = localStorage.getItem("theme");
+
+  useEffect(()=>{
+
+    if(darkMode==="dark"){
+      setDark(true);
+    }else {
+      setDark(false);
+    }
+
+
+  },[darkMode])
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,6 +49,7 @@ const Headermain = () => {
     };
   }, []);
 
+
   return (
     <>
       <div className="site__header">
@@ -47,7 +63,9 @@ const Headermain = () => {
           className={`site__navigation  ${
             window.innerWidth <= 768
               ? !isActive
-                ? "menu_opened_small_device"
+                ? dark 
+                  ? "menu_opened_small_device"
+                  : "light_menu_opened_small_device"
                 : "menu__opend_hide"
               : "menu__opend"
           }`}
