@@ -27,7 +27,7 @@ export const Portfolio = () => {
                 <h5 style={{margin:"0px",paddingBottom:"10px"}}>{data?.company} </h5>
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <a href={data.link} target="_blank" rel="noopener noreferrer">view project</a>
                 </div>
               </div>
             );
