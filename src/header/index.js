@@ -77,14 +77,14 @@ const Headermain = () => {
               </Link>
             </li>
             <li className="menu_item">
-              <Link onClick={handleToggle} to="/portfolio">
-                {" "}
-                Portfolio
+              <Link onClick={handleToggle} to="/about">
+                About
               </Link>
             </li>
             <li className="menu_item">
-              <Link onClick={handleToggle} to="/about">
-                About
+              <Link onClick={handleToggle} to="/portfolio">
+                {" "}
+                Portfolio
               </Link>
             </li>
             <li className="menu_item">
@@ -97,9 +97,10 @@ const Headermain = () => {
         </div>
         <div style={{ display: "flex" }}>
           <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
+          {window.innerWidth <= 768?<>  <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
+          </button></>:<></>}
+        
         </div>
       </div>
       {/* <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
