@@ -22,12 +22,12 @@ const dataabout = {
 const worktimeline = [{
         jobtitle: "Fenris",
         where: "Lahore PK",
-        date: "Present",
+        date: "July(2023)-Present",
     },
     {
         jobtitle: "Enigmatix",
         where: "Bahawalpur PK",
-        date: "2023",
+        date: "Nov(2022)-June(2023)",
     },
 ];
 

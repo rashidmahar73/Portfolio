@@ -13,7 +13,7 @@ import "./App.css";
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="cursor__dot">
+      {/* <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
           outerSize={15}
@@ -22,7 +22,7 @@ export default function App() {
           innerScale={0.7}
           outerScale={5}
         />
-      </div>
+      </div> */}
       <Headermain />
         <AppRoutes />
 
